@@ -8,8 +8,8 @@ RUN npm install
 
 COPY server/ .
 
-COPY client/ ./client/
+COPY client/ /app/client/
 
-EXPOSE 3000
+EXPOSE 8080
 
 CMD ["node", "index.js"]
