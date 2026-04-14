@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>VIEW360 — Controller</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="sales-topbar">
+    <div class="logo">VIEW360</div>
+    <div class="topbar-right">
+      <div class="display-count">LED: <span id="displayCount">0</span></div>
+      <div class="status-dot" id="statusDot"></div>
+    </div>
+  </div>
+
+  <!-- Project switcher -->
+  <div class="project-switcher" id="projectSwitcher"></div>
+
+  <!-- Spot grid -->
+  <div class="spot-grid" id="spotGrid"></div>
+
+  <!-- Bottom bar -->
+  <div class="bottom-bar">
+    <button class="sync-btn" id="syncBtn">Tap để chiếu lên LED ↑</button>
+  </div>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="assets/projects.js"></script>
+  <script src="assets/sales.js"></script>
+</body>
+</html>

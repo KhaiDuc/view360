@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VIEW360 — Display</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <div class="display-container" id="displayContainer">
+    <!-- Waiting screen -->
+    <div class="display-waiting" id="waitingScreen">
+      <div class="logo-big">VIEW360</div>
+      <div class="hint"><span class="pulse-dot"></span>Đang chờ kết nối từ Controller…</div>
+    </div>
+
+    <!-- Main display -->
+    <img class="display-image" id="displayImage" src="" alt="">
+    <video class="display-video" id="displayVideo" muted autoplay loop playsinline></video>
+    <iframe class="display-youtube" id="displayYoutube" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+    <!-- Flash ring -->
+    <div class="flash-ring" id="flashRing"></div>
+
+    <!-- Overlay -->
+    <div class="display-overlay" id="overlay" style="opacity: 0;">
+      <div class="project-label" id="projectLabel"></div>
+      <div class="spot-title" id="spotTitle"></div>
+      <div class="spot-sub" id="spotSub"></div>
+    </div>
+
+    <!-- Branding -->
+    <div class="display-branding">VIEW360</div>
+
+    <!-- Connection status -->
+    <div class="display-status" id="statusDot"></div>
+  </div>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="assets/projects.js"></script>
+  <script src="assets/display.js"></script>
+</body>
+</html>
